@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+</head>
+<body>
+<div class="flex-container">
+    <div class="calculator">
+        <button id="Eng">Eng</button>
+        <button id="Program">Prog</button>
+        <div class="screen">
+            <p id="chain"></p>
+            <p id="result"></p>
+        </div>
+        <div class="screen-program" >
+            <p></p>
+            <p></p>
+            <p id="chainBit">
+                <span id="bits1" hidden="true">0000</span>
+                <span id="bits12" hidden="true">0000</span>
+                <span id="bits2" hidden="true">0000</span>
+                <span id="bits21" hidden="true">0000</span>
+                <span id="bits4" hidden="true">0000</span>
+                <span id="bits41" hidden="true">0000</span>
+                <span id="bits42" hidden="true">0000</span>
+                <span id="bits43" hidden="true">0000</span>
+            </p>
+            <p></p>
+        </div>
+        <div class="row">
+            <button id="ce" class="operator" type="button">CE</button>
+            <button id="c" class="operator" type="button">C</button>
+            <button id="backspace" class="operator" type="button">&larr;</button>
+            <button id="division" class="operator" type="button">/</button>
+        </div>
+        <div class="row">
+            <button id="num7" type="button">7</button>
+            <button id="num8" type="button">8</button>
+            <button id="num9" type="button">9</button>
+            <button id="multiplication" class="operator" type="button">x</button>
+        </div>
+        <div class="row">
+            <button id="num4" type="button">4</button>
+            <button id="num5" type="button">5</button>
+            <button id="num6" type="button">6</button>
+            <button id="subtraction" class="operator" type="button">-</button>
+        </div>
+        <div class="row">
+            <button id="num1" type="button">1</button>
+            <button id="num2" type="button">2</button>
+            <button id="num3" type="button">3</button>
+            <button id="addition" class="operator" type="button">+</button>
+        </div>
+        <div class="row">
+            <button id="num0" class="zero" type="button">0</button>
+            <button id="dot" class="operator" type="button">.</button>
+            <button id="equals" class="operator" type="button">=</button>
+        </div>
+        <div  class="eng">
+            <div class="row">
+                <button id="sqrt"  type="button">&radic;</button>
+                <button id="sqrt3"  type="button">&#8731;</button>
+                <button id="pi"  type="button">	&prod;</button>
+                <button id="Exp"  type="button">E</button>
+            </div>
+            <div class="row">
+                <button id="x2"  type="button">x<sup>2</sup></button>
+                <button id="x3"  type="button">x<sup>3</sup></button>
+                <button id="fact"  type="button">!X</button>
+                <button id="ex"  type="button">Exp<sup>x</sup></button>
+            </div>
+            <div class="row">
+                <button id="sin"  type="button">sin</button>
+                <button id="cos"  type="button">cos</button>
+                <button id="tan"  type="button">tan</button>
+                <button id="log10" type="button">log</button>
+            </div>
+            <div class="row">
+                <button id="asin"  type="button">sinh</button>
+                <button id="acos"  type="button">cosh</button>
+                <button id="atan"  type="button">tanh</button>
+                <button id="ln"  type="button">ln</button>
+            </div>
+        </div>
+        <div class="prog">
+            <div class="row">
+                <button id="A" type="button">A</button>
+                <button id="B" type="button">B</button>
+                <button id="Ci" type="button">C</button>
+                <button id="D" type="button">D</button>
+            </div>
+            <div class="row">
+                <button id="E" type="button">E</button>
+                <button id="F" type="button">F</button>
+            </div>
+            <div class="row">
+                <div class="blocks">
+                    <label for="hex">Hex</label>
+                    <input name="sis" id="hex" type="radio"  >
+                </div>
+                <div class="blocks">
+                    <label for="dec">Dec</label>
+                    <input name="sis" id="dec" type="radio">
+                </div>
+                <div class="blocks">
+                    <label for="oct">Oct</label>
+                    <input name="sis" id="oct" type="radio">
+                </div>
+                <div class="blocks">
+                    <label for="bin">Bin</label>
+                    <input name="sis" id="bin" type="radio">
+                </div>
+
+            </div>
+            <div class="row" >
+                <div class="blocks">
+                    <label for="bit8">8bit</label>
+                    <input name="bit" id="bit8" type="radio"  >
+                </div>
+                <div class="blocks">
+                    <label for="bit4">4bit</label>
+                    <input name="bit" id="bit4" type="radio">
+                </div>
+                <div class="blocks">
+                    <label for="bit2">2bit</label>
+                    <input name="bit" id="bit2" type="radio">
+                </div>
+                <div class="blocks">
+                    <label for="bit1">1bit</label>
+                    <input name="bit" id="bit1" type="radio">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
