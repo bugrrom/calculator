@@ -14,6 +14,9 @@ module.exports = {
     devServer: {
         port: 4000
     },
+    resolve: {
+        extensions: ['.ts','.js' ]
+    },
     plugins: [
         new HTMLWebpackPlugin({
             template: "./src/index.html",
@@ -40,6 +43,9 @@ module.exports = {
                     options: {
                         presets: [
                             "@babel/preset-env",
+                        ],
+                        plugins: [
+                            "@babel/plugin-proposal-class-properties"
                         ]
                     }
                 }
@@ -53,6 +59,9 @@ module.exports = {
                         presets: [
                             "@babel/preset-env",
                             "@babel/preset-typescript"
+                        ],
+                        plugins: [
+                            "@babel/plugin-proposal-class-properties"
                         ]
                     }
                 }
